@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+body {
+  text-align: center;
+  background: black;
+  color: white;
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: white;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.normtext {
+  color: rgb(206 6 96);
+  font-size: 18px;
+  font-family: "Anonymouspro";
+}
+
+.skilltext {
+  color: white;
+  font-size: 18px;
+  font-family: "Anonymouspro";
+  text-align: left;
+  text-justify: auto;
+}
+/* text shadow */
+h1 {
+  font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 1.3em;
+  }
+}
+.text-shadow {
+  font-style: italic;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: chartreuse;
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 2px 2px 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+  letter-spacing: 0.2em;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+.text-shadow2 {
+  font-style: italic;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 30px;
+  -webkit-text-stroke: palevioletred;
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 2px 2px 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+  letter-spacing: 0.2em;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+
+.text-shadow3 {
+  font-style: italic;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 30px;
+  -webkit-text-stroke: #00bdff;
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 2px 2px 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  letter-spacing: 5px;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+.text-shadow4 {
+  font-style: italic;
+  font-size: 64px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: chartreuse;
+  -webkit-text-stroke-width: 2px;
+  text-shadow: 2px 2px 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  letter-spacing: 0.2em;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+
+.line {
+  position: relative;
+  top: 3%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid white;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/*Animation*/
+
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+.neon {
+  font-size: 20px;
+  line-height: 20px;
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 2px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10.5em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px;
+  }
+}
+
+/*  */
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+      0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+/*  */
+
+div {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+div:before,
+div:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+div:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
