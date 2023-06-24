@@ -3,7 +3,7 @@
 body {
   text-align: center;
   color: white;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Anonymous Pro";
   background-color: black;
   width: 100%;
   min-height: 100vh;
@@ -19,7 +19,7 @@ body {
   font-size: 30px;
 }
 .waviy span {
-  font-family: "AnonymousPro", cursive;
+  font-family: "AnonymousPro";
   position: relative;
   display: inline-block;
   color: white;
@@ -133,13 +133,10 @@ h1 {
 .neon {
   font-size: 20px;
   line-height: 20px;
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
   text-shadow: 0 0 2px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
     0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
   color: #fff6a9;
-  font-family: "AnonymousPro", cursive;
+  font-family: "AnonymousPro";
   text-align: center;
   animation: blink 5s infinite;
   -webkit-animation: blink 12s infinite;
