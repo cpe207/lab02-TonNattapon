@@ -76,7 +76,6 @@ h1 {
   text-transform: uppercase;
   color: chartreuse;
   font-size: 36px;
-  -webkit-text-stroke: ;
   -webkit-text-stroke-width: 2px;
   text-shadow: 2px 2px 10px;
   transition: all 0.5s ease-in-out;
