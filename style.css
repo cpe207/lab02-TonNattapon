@@ -50,8 +50,8 @@
 }
 .navbar .nav-links ul li.active a {
   font-weight: 600;
-  background-color: transparent;
-  outline-color: #d8c4b6;
+  background-color: #f5efe7;
+  outline-color: #f5efe7;
   outline-style: solid;
   outline-width: 0.2rem;
   padding: 9px 25px;
@@ -133,7 +133,7 @@ body {
   border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
-  color: black;
+  color: #213555;
   font-family: AnonymousPro;
 }
 
@@ -199,6 +199,7 @@ body {
   height: 5vh;
   line-height: 3;
   font-size: 1rem;
+  color: #213555;
 }
 
 .box:hover {
@@ -207,4 +208,65 @@ body {
 .box:hover > img {
   width: 100%;
   height: 100%;
+}
+
+/* contact icon */
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon-area li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.icon-area a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+	color: #D8C4B6;
+	font-size: 40px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+	z-index: 0;
+    text-align: center;
+}
+.icon-area a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #D8C4B6;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 0.3s;
+	z-index: -1;
+}
+.icon-area a:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.icon-area a:hover{
+	color: #F5EFE7;
+}
+
+
+.card-title {
+  color: #213555;
+}
+.card-text {
+  color: #4f709c;
+}
+.card {
+  background-color: #f5efe7;
+}
+
+.fw-semibold {
+  color: #213555;
 }
