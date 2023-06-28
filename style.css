@@ -272,3 +272,12 @@ body {
 .profile {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
+
+.imgZoom {
+  object-fit: cover;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+.imgZoom:hover {
+  transform: scale(1.1);
+}
