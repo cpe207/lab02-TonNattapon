@@ -3,127 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-  <style>
-    #mySidenav a {
-      position: absolute;
-      left: -80px;
-      transition: 0.3s;
-      padding: 17px;
-      width: 125px;
-      text-decoration: none;
-      font-size: 18px;
-      color: chartreuse;
-      border-radius: 0 5px 5px 0;
-    }
-
-    #mySidenav a:hover {
-      left: 0;
-    }
-
-    #home {
-      top: 160px;
-      background-color: black;
-    }
-
-    #exp {
-      top: 220px;
-      background-color: black;
-    }
-
-    #contact {
-      top: 280px;
-      background-color: black;
-    }
-    img {
-      border-radius: 50%;
-    }
-    img:hover {
-      animation: shake 0.5s;
-      animation-iteration-count: infinite;
-    }
-
-    @keyframes shake {
-      0% {
-        transform: translate(1px, 1px) rotate(0deg);
-      }
-      10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-      }
-      20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-      }
-      30% {
-        transform: translate(3px, 2px) rotate(0deg);
-      }
-      40% {
-        transform: translate(1px, -1px) rotate(1deg);
-      }
-      50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-      }
-      60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-      }
-      70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-      }
-      80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-      }
-      90% {
-        transform: translate(1px, 2px) rotate(0deg);
-      }
-      100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-      }
-    }
-  </style>
   <body>
-    <f id="mySidenav" class="sidenav">
-      <a href="index.html" id="home">Home</a>
-      <a href="exp.html" id="exp">Experience</a>
-      <a href="contact.html" id="contact">Contact</a>
-    </f>
-    <h1 class="text-shadow4"><strong>My Portfolio</strong></h1>
-    <img src="IMG_8788.JPG" alt="Avatar" style="width: 300px; height: 400px" />
-    <div class="waviy">
-      <span style="--i: 1">N</span>
-      <span style="--i: 2">A</span>
-      <span style="--i: 3">T</span>
-      <span style="--i: 4">T</span>
-      <span style="--i: 5">H</span>
-      <span style="--i: 6">A</span>
-      <span style="--i: 7">P</span>
-      <span style="--i: 8">O</span>
-      <span style="--i: 9">N</span>
-      <span style="--i: 10">C</span>
-      <span style="--i: 11">H</span>
-      <span style="--i: 12">A</span>
-      <span style="--i: 13">N</span>
-      <span style="--i: 14">A</span>
-      <span style="--i: 15">V</span>
-      <span style="--i: 16">E</span>
-      <span style="--i: 17">R</span>
-      <span style="--i: 18">O</span>
-      <span style="--i: 19">T</span>
-      <span style="--i: 20">E</span>
+    <nav class="navbar">
+      <!-- <a href="" class="logo">MyPortfolio</a> -->
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html" style="padding-top: 9px">Home</a></li>
+          <li><a href="exp.html" style="padding-top: 9px">Experience</a></li>
+          <li><a href="gallery.html " style="padding-top: 9px">Gallery</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <img src="images/menu.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <p class="text-center fs-3">Contact Me</p>
+    <div
+      style="max-width: 700px"
+      class="mx-auto d-flex justify-content-center align-items-center gap-3 flex-wrap"
+    >
+      <div>
+        <img
+          src="images/IMG_8788.JPG"
+          class="rounded-circle"
+          width="200"
+          height="200"
+          style="object-fit: cover"
+        />
+      </div>
+      <div class="vstack gap-2 my-5" style="max-width: 400px">
+        <div class="d-flex">
+          <div style="min-width: 100px" class="fw-semibold">Name</div>
+          <span class="text-muted">Natthapon Chanaveroj</span>
+        </div>
+
+        <div class="d-flex">
+          <div style="min-width: 100px" class="fw-semibold">Nickname</div>
+          <span class="text-muted">Ton</span>
+        </div>
+
+        <div class="d-flex">
+          <div style="min-width: 100px" class="fw-semibold">Address</div>
+          <span class="text-muted">
+            239 Huay Kaew Rd, Tambon Su Thep, Amphoe Mueang Chiang Mai, Chang
+            Wat Chiang Mai 50200
+          </span>
+        </div>
+        <div
+          class="contact justify-content-center my-2"
+          style="margin-left: 5.5rem"
+        >
+          <a
+            href="https://www.facebook.com/tonyveryhappy"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="images/contact/brand-facebook-filled.png"
+              alt=""
+              width="40rem"
+              height="40rem"
+          /></a>
+          <a
+            href="https://www.instagram.com/np_ton/"
+            target="_blank"
+            rel="noreferrer"
+            ><img
+              src="images/contact/brand-instagram.png"
+              alt=""
+              width="40rem"
+              height="40rem"
+          /></a>
+          <a href="mailto: Natthapon_c@cmu.ac.th"
+            ><img
+              src="images/contact/mail-filled.png"
+              alt=""
+              width="40rem"
+              height="40rem"
+          /></a>
+        </div>
+      </div>
     </div>
-    <p class="line anim-typewriter">Hi, my name is Ton.</p>
-    <p class="neon">
-      I am a Computer Engineering Student from Chiangmai University. It's a
-      pleasure to meet you!
+    <p class="text-center text-muted m-4">
+      © 2023 Natthapon-Chanaveroj.com by Natthapon Chanaveroj
     </p>
-    <h3 class="text-shadow2"><strong>Contact</strong></h3>
-    <div class="w3-panel w3-border w3-border-green">
-      <p class="skilltext">
-        Email:
-        <a href="mailto:natthapon_c@cmu.ac.th">Natthapon_c@cmu.ac.th</a>
-      </p>
-      <p class="skilltext">Tel: 081-352-2851</p>
-    </div>
   </body>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>

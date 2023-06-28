@@ -3,134 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-  <style>
-    #mySidenav a {
-      position: absolute;
-      left: -80px;
-      transition: 0.3s;
-      padding: 17px;
-      width: 125px;
-      text-decoration: none;
-      font-size: 18px;
-      color: chartreuse;
-      border-radius: 0 5px 5px 0;
-    }
-
-    #mySidenav a:hover {
-      left: 0;
-    }
-
-    #home {
-      top: 160px;
-      background-color: black;
-    }
-
-    #exp {
-      top: 220px;
-      background-color: black;
-    }
-
-    #contact {
-      top: 280px;
-      background-color: black;
-    }
-    img {
-      border-radius: 50%;
-    }
-    img:hover {
-      animation: shake 0.5s;
-      animation-iteration-count: infinite;
-    }
-
-    @keyframes shake {
-      0% {
-        transform: translate(1px, 1px) rotate(0deg);
-      }
-      10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-      }
-      20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-      }
-      30% {
-        transform: translate(3px, 2px) rotate(0deg);
-      }
-      40% {
-        transform: translate(1px, -1px) rotate(1deg);
-      }
-      50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-      }
-      60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-      }
-      70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-      }
-      80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-      }
-      90% {
-        transform: translate(1px, 2px) rotate(0deg);
-      }
-      100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-      }
-    }
-  </style>
   <body>
-    <f id="mySidenav" class="sidenav">
-      <a href="index.html" id="home">Home</a>
-      <a href="exp.html" id="exp">Experience</a>
-      <a href="contact.html" id="contact">Contact</a>
-    </f>
-    <h1 class="text-shadow4"><strong>My Portfolio</strong></h1>
-    <img src="IMG_8788.JPG" alt="Avatar" style="width: 300px; height: 400px" />
-    <div class="waviy">
-      <span style="--i: 1">N</span>
-      <span style="--i: 2">A</span>
-      <span style="--i: 3">T</span>
-      <span style="--i: 4">T</span>
-      <span style="--i: 5">H</span>
-      <span style="--i: 6">A</span>
-      <span style="--i: 7">P</span>
-      <span style="--i: 8">O</span>
-      <span style="--i: 9">N</span>
-      <span style="--i: 10">C</span>
-      <span style="--i: 11">H</span>
-      <span style="--i: 12">A</span>
-      <span style="--i: 13">N</span>
-      <span style="--i: 14">A</span>
-      <span style="--i: 15">V</span>
-      <span style="--i: 16">E</span>
-      <span style="--i: 17">R</span>
-      <span style="--i: 18">O</span>
-      <span style="--i: 19">T</span>
-      <span style="--i: 20">E</span>
+    <nav class="navbar">
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html" style="padding-top: 9px">Home</a></li>
+          <li class="active"><a href="exp.html">Experience</a></li>
+          <li><a href="gallery.html " style="padding-top: 9px">Gallery</a></li>
+          <li><a href="contact.html" style="padding-top: 9px">Contact</a></li>
+        </ul>
+      </div>
+      <img src="images/menu.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+    <div style="max-width: 700px" class="mx-auto px-3">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card my-rounded-all">
+            <img src="images/exp/exp_1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">
+                When I was a freshman, I did a basic computer project using
+                scratch and made a game in C++ for my computer science project.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-top">
+            <img
+              src="images/exp/exp_2.JPG"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Light & Sound</h5>
+              <p class="card-text">
+                I have experienced light’s work and sound’s work. I was on stage
+                and light designer for my matthayom school events and
+                Cinemaneer65 that was held when I was a freshman.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="images/exp/exp_3.jpeg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Observer</h5>
+              <p class="card-text">
+                I have experienced being an observer using OBS for the Valorant
+                Scrim Room on Facebook.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="images/exp/exp_4.jpg"
+              class="card-img-top rounded-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cinemaneer65</h5>
+              <p class="card-text">
+                I have experience as an overall lighting and stage designer for
+                Cinemaneer 65.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="neon">
-      I am a Computer Engineering Student from Chiangmai University. It's a
-      pleasure to meet you!
+    <p class="text-center text-muted m-4">
+      © 2023 Natthapon-Chanaveroj.com by Natthapon Chanaveroj
     </p>
-    <p class="line anim-typewriter">Hi, my name is Ton.</p>
-    <h3 class="text-shadow2"><strong>Experience</strong></h3>
-    <div class="w3-panel w3-border w3-border-green">
-      <h3 class="text-shadow"><strong>Personal</strong></h3>
-      <p class="skilltext">
-        At Chiangmai University, I actively engaged in the Student Council,
-        organizing events and addressing concerns, fostering teamwork and
-        enhancing my leadership and communication skills.
-      </p>
-    </div>
-    <div class="w3-panel w3-border w3-border-green">
-      <h3 class="text-shadow"><strong>Hobby</strong></h3>
-      <p class="skilltext">
-        I enjoy playing the guitar and listening to music.
-      </p>
-    </div>
   </body>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>

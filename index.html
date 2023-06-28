@@ -4,130 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/logo.png" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/_next/static/media/d86fbdfc3d1edd6f-s.p.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      data-next-font="size-adjust"
+    />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/a40ea84efc0a7ea3.css"
+      data-precedence="next.js"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <title>MyPortfolio</title>
   </head>
-  <style>
-    #mySidenav a {
-      position: absolute;
-      left: -80px;
-      transition: 0.3s;
-      padding: 17px;
-      width: 130px;
-      text-decoration: none;
-      font-size: 18px;
-      color: chartreuse;
-      border-radius: 0 5px 5px 0;
-    }
-
-    #mySidenav a:hover {
-      left: 0;
-    }
-
-    #home {
-      top: 160px;
-      background-color: black;
-    }
-
-    #exp {
-      top: 220px;
-      background-color: black;
-    }
-
-    #contact {
-      top: 280px;
-      background-color: black;
-    }
-
-    img {
-      border-radius: 50%;
-    }
-    img:hover {
-      animation: shake 0.5s;
-      animation-iteration-count: infinite;
-    }
-
-    @keyframes shake {
-      0% {
-        transform: translate(1px, 1px) rotate(0deg);
-      }
-      10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-      }
-      20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-      }
-      30% {
-        transform: translate(3px, 2px) rotate(0deg);
-      }
-      40% {
-        transform: translate(1px, -1px) rotate(1deg);
-      }
-      50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-      }
-      60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-      }
-      70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-      }
-      80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-      }
-      90% {
-        transform: translate(1px, 2px) rotate(0deg);
-      }
-      100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-      }
-    }
-  </style>
-
   <body>
-    <f id="mySidenav" class="sidenav">
-      <a href="index.html" id="home">Home</a>
-      <a href="exp.html" id="exp">Experience</a>
-      <a href="contact.html" id="contact">Contact</a>
-    </f>
-    <h1 class="text-shadow4"><strong>My Portfolio</strong></h1>
-    <img src="IMG_8788.JPG" alt="Avatar" style="width: 300px; height: 400px" />
-    <div class="waviy">
-      <span style="--i: 1">N</span>
-      <span style="--i: 2">A</span>
-      <span style="--i: 3">T</span>
-      <span style="--i: 4">T</span>
-      <span style="--i: 5">H</span>
-      <span style="--i: 6">A</span>
-      <span style="--i: 7">P</span>
-      <span style="--i: 8">O</span>
-      <span style="--i: 9">N</span>
-      <span style="--i: 10">C</span>
-      <span style="--i: 11">H</span>
-      <span style="--i: 12">A</span>
-      <span style="--i: 13">N</span>
-      <span style="--i: 14">A</span>
-      <span style="--i: 15">V</span>
-      <span style="--i: 16">E</span>
-      <span style="--i: 17">R</span>
-      <span style="--i: 18">O</span>
-      <span style="--i: 19">T</span>
-      <span style="--i: 20">E</span>
+    <div id="preloader"></div>
+    <nav class="navbar">
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="exp.html" style="padding-top: 9px">Experience</a></li>
+          <li><a href="gallery.html " style="padding-top: 9px">Gallery</a></li>
+          <li><a href="contact.html" style="padding-top: 9px">Contact</a></li>
+        </ul>
+      </div>
+      <img src="images/menu.png" alt="menu hamburger" class="menu-hamburger" />
+    </nav>
+
+    <div
+      class="d-flex justify-content-center align-items-center mx-auto gap-3"
+      style="max-width: 700px"
+    >
+      <div>
+        <img
+          src="images/IMG_8788.JPG"
+          class="rounded-circle"
+          width="200"
+          height="200"
+          style="object-fit: cover"
+        />
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="display-5 mb-3 line anim-typewriter">
+          Natthapon Chanaveroj
+        </div>
+        <div class="text-muted">
+          Hi, my name is Natthapon. I graduated from Chiangmai University.
+          Studied Computer Engineering. Love movies, musics, books and sleeping
+          in free time...
+        </div>
+      </div>
     </div>
-    <p class="line anim-typewriter">Hi, my name is Ton.</p>
-    <p class="neon">
-      I am a Computer Engineering Student from Chiangmai University. It's a
-      pleasure to meet you!
+    <div class="container">
+      <div class="box">
+        <img src="images/skills/programming.jpg" />
+        <span>Coding</span>
+      </div>
+      <div class="box">
+        <img src="images/skills/skill_2.png" />
+        <span>Graphic and Video Editing</span>
+      </div>
+      <div class="box">
+        <img src="images/skill_3.jpg" />
+        <span>Guitarist</span>
+      </div>
+    </div>
+    <p class="text-center text-muted m-4">
+      © 2023 Natthapon-Chanaveroj.com by Natthapon Chanaveroj
     </p>
-    <h3 class="text-shadow2"><strong>Skills</strong></h3>
-    <div class="w3-panel w3-border w3-border-green">
-      <h3 class="text-shadow"><strong>Programming</strong></h3>
-      <p class="skilltext">C++, HTML, CSS, JS.</p>
-    </div>
-    <div class="w3-panel w3-border w3-border-green">
-      <h3 class="text-shadow"><strong>Software</strong></h3>
-      <p class="skilltext">Premier Pro, Photoshop.</p>
-    </div>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+    </script>
   </body>
+
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>
