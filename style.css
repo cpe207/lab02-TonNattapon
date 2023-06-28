@@ -133,7 +133,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   color: #213555;
-  font-family: AnonymousPro;
+  font-family: "Anonymous Pro", monospace;
 }
 
 /*Animation*/
