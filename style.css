@@ -186,7 +186,7 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
   border-radius: 20px;
-  background-color: #f5efe7;
+  background-color: rgb(245 246 248);
 }
 
 .box > img {
@@ -266,7 +266,7 @@ body {
   color: #4f709c;
 }
 .card {
-  background-color: #f5efe7;
+  background-color: rgb(245 246 248);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
