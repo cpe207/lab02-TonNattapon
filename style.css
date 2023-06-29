@@ -280,7 +280,7 @@ body {
 
 .imgZoom {
   object-fit: cover;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .imgZoom:hover {
