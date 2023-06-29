@@ -38,6 +38,9 @@
 }
 .nav-links li a:hover {
   color: #4f709c;
+  background-color: #f5efe7;
+  padding: 9px 25px;
+  border-radius: 50px;
 }
 .navbar .logo {
   font-size: 2em;
